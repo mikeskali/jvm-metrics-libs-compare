@@ -1,0 +1,6 @@
+rootProject.name = 'MetricsPoc'
+include 'metrics-generator',
+        'metrics-prometheus',
+        'metrics-micrometer',
+        'metrics-spectator',
+        'metrics-dropwizard'

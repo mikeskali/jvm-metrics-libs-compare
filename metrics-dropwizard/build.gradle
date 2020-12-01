@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':metrics-generator')
+    implementation  group: 'io.dropwizard.metrics', name: 'metrics-core', version: '4.1.16'
+
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+application {
+    mainClass = 'metrics.dropwizard.DropWizardStarter'
+}

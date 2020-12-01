@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':metrics-generator')
+
+    implementation "io.prometheus:simpleclient:0.9.0"
+    implementation "io.prometheus:simpleclient_hotspot:0.9.0"
+    implementation "io.prometheus:simpleclient_httpserver:0.9.0"
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+application {
+    mainClass = 'metrics.spectator.PrometheusStarter'
+}
