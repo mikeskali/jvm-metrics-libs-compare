@@ -10,9 +10,9 @@ It updates it's listeners with transaction arrived, transaction processing time,
 # Build and run
  * build: `gradlew clean install`
  * run a specific implementation: 
-    * `gradlew run :metrics-prometheus` 
-    * `gradlew run :metrics-micrometer`
-    * `gradlew run :metrics-spectatore`
+    * `gradlew :metrics-spectator:run` 
+    * `gradlew :metrics-micrometer:run`
+    * `gradlew :metrics-spectatore:run`
     
   
  
