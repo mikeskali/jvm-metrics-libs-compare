@@ -1,4 +1,4 @@
-package metrics.spectator;
+package metrics.prometheus;
 
 import com.sun.net.httpserver.HttpServer;
 import io.micrometer.core.instrument.Counter;

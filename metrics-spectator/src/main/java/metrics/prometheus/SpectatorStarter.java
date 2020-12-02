@@ -1,4 +1,4 @@
-package metrics.spectator;
+package metrics.prometheus;
 
 import com.netflix.spectator.api.Counter;
 import com.netflix.spectator.api.DistributionSummary;

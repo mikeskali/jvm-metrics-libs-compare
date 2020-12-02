@@ -1,6 +1,5 @@
-package metrics.spectator;
+package metrics.prometheus;
 
-import io.prometheus.client.CollectorRegistry;
 import io.prometheus.client.Counter;
 import io.prometheus.client.Gauge;
 import io.prometheus.client.Histogram;
