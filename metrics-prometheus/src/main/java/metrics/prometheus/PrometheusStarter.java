@@ -63,6 +63,7 @@ public class PrometheusStarter implements MetricsListener{
 
     @Override
     public void recordTransactionProcessingTime(long elapsedTimeMs, String instance, boolean isSuccessful) {
+        processingTime.labels(instance, String.valueOf(isSuccessful)).observe(elapsedTimeMs);
     }
 
     @Override
